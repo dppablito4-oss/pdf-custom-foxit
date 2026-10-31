@@ -1,0 +1,24 @@
+GRAFIPLOT STUDIO - React + Vite + Tauri
+
+La aplicacion nueva se distribuye como instalador .exe para Windows.
+Los archivos compilados quedan en artifacts/.
+
+INSTALACION
+Abra el archivo setup.exe generado en artifacts y siga el instalador.
+No necesita instalar Python, Node o Rust en el equipo de uso.
+
+PORTABLE
+Extraiga GRAFIPLOT-Studio-portable.zip y abra GRAFIPLOT Studio.exe.
+Conserve grafiplot-engine.exe en la misma carpeta.
+No se utilizan lanzadores .bat.
+
+DESARROLLO Y COMPILACION
+README.md y docs/DESKTOP.md describen los modulos y la compilacion.
+npm run desktop:dev abre el escritorio de desarrollo.
+python scripts/build_desktop.py genera el instalador y el portable.
+
+Los modulos Tkinter y scripts PowerShell anteriores permanecen como
+referencia; no son el modo de instalacion del nuevo escritorio.
+
+Office requiere LibreOffice; impresion directa requiere SumatraPDF.
+Verde significa enviado: no confirma la salida fisica de la impresora.

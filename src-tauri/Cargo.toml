@@ -1,0 +1,19 @@
+[package]
+name = "grafiplot-studio"
+version = "1.2.0"
+description = "GRAFIPLOT Estudio de impresión"
+authors = ["GRAFIPLOT"]
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+serde_json = "1"
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1
